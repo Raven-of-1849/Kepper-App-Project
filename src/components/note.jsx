@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-function noteDiv() {
+function noteDiv(props) {
+  console.log(props)
    return (
         <div className="note">
-              <h1>Keep the things most important to you!</h1>
-              <p>The days of loosing things are over!</p>
+              <h1>{props.noteTitle}</h1>
+              <p>{props.noteContent}</p>
         </div>
 )}
 export default noteDiv;
